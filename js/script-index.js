@@ -1,19 +1,25 @@
+ $(document).ready(function(){	
+		$("#ocultar").on( "click", function(){
+			$('.js-back').hide(); 
+		});
+	});
+
 $(document).ready( function(){
+
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
 });
-
-
+   
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+
 	console.log('Recipes: ', recipesArray);
 }
-
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
@@ -23,8 +29,6 @@ function renderHighlightedRecipes(recipesArray) {
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 }
-
-
 
 /*
 * Función que se encarga de pintar todas las actividades
